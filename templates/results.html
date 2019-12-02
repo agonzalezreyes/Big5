@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %} 
+{% block content %}
+
+<div class="col-md-4 col-md-offset-4">
+
+      <div align="center">
+          <h2>Big 5 Twitter Personality Traits</h2>
+      </div>
+
+<hr>
+
+      <div align="center">
+          <h3>Results for @{{notes['user']}}'s tweets:</h3>
+          
+          <h4>Openness: {{notes['O']}}%</h4>
+          
+          <h4>Conscientiousness: {{notes['C']}}%</h4>
+          
+          <h4>Extraversion: {{notes['E']}}%</h4>
+          
+          <h4>Agreeableness: {{notes['A']}}%</h4>
+          
+          <h4>Neuroticism: {{notes['N']}}%</h4>
+      </div>
+
+<hr>
+
+<div align="center"
+    <p><a href="/"><button type="submit" class="btn btn-primary">Return home</button></p></a>
+</div>
+
+<hr>
+
+<div align="center">
+    <body>Stanford CS 109 Autumn 2019 Project by Alejandrina G.R.</body>
+</div>
+
+{% endblock %}  
